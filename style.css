@@ -5,125 +5,72 @@ body, html {
     font-family: "Droid Serif";
 }
 
-.heading{
+a, a:hover{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/*.heading {
+    background-color: #8cb5ce;
+}*/
+
+.heading h1 {
     font-size: 36px;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-left: 15px;
     color: black;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
 }
 
+.navbar {
+    position: absolute;
+    right: 0px;
+    background-color: #8cb5ce;
+}
+
 #menu{
-    list-style: none;
-    text-align: center;
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    display: inline;
 }
 
 #menu li{
-    font-size: 15px;
+    font-size: 20px;
     height: 40px;
     line-height: 40px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 #menu li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     display: block;
 }
 
 #menu li a:hover{
-    color: #000080;
+    color: grey;
 }
 
-#menu a.active{
-    cursor: default;
-    background-color: #1E90FF;
-    color: #fff;
-}
 
 @media screen and (min-width: 600px){
     #menu li{
         width: 150px;
         height: 40px;
         line-height: 40px;
-    }
-
-    #menu li{
         float: left;
     }
 
     #menu{
         overflow: auto;
-        width: 600px;
+        width: 400px;
         margin: auto;
     }
-
-    nav{
-        background-color: #000000;
-    }
 }
-
-.dropdown{
-    list-style: none;
-    text-align: center;
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-
-.dropdown li{
-    font-size: 15px;
-    height: 40px;
-    line-height: 40px;
-}
-
-.dropdown li a{
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-#menu li .dropdown{
-    display: block;
-}
-
-
-
-@media screen and (min-width: 600px){
-    .dropdown{
-        position: absolute;
-        width: 200px;
-        background-color: #000080;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-left: -25px;
-    }
-
-    .dropdown li{
-        width: 200px;
-        vertical-align: center;
-        text-align: center;
-    }
-
-    .dropdown li a{
-        display: block;
-        text-align: center;
-        width: 200px;
-    }
-
-    .dropdown{
-        display: none;
-    }
-
-    #menu li:hover .dropdown{
-        display: block;
-    }
-}
-
