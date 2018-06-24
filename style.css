@@ -1,0 +1,129 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css';
+
+body, html {
+    background-color: #eceff1;
+    font-family: "Droid Serif";
+}
+
+.heading{
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#menu{
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+#menu li a:hover{
+    color: #000080;
+}
+
+#menu a.active{
+    cursor: default;
+    background-color: #1E90FF;
+    color: #fff;
+}
+
+@media screen and (min-width: 600px){
+    #menu li{
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #menu li{
+        float: left;
+    }
+
+    #menu{
+        overflow: auto;
+        width: 600px;
+        margin: auto;
+    }
+
+    nav{
+        background-color: #000000;
+    }
+}
+
+.dropdown{
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.dropdown li{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dropdown li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+#menu li .dropdown{
+    display: block;
+}
+
+
+
+@media screen and (min-width: 600px){
+    .dropdown{
+        position: absolute;
+        width: 200px;
+        background-color: #000080;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-left: -25px;
+    }
+
+    .dropdown li{
+        width: 200px;
+        vertical-align: center;
+        text-align: center;
+    }
+
+    .dropdown li a{
+        display: block;
+        text-align: center;
+        width: 200px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    #menu li:hover .dropdown{
+        display: block;
+    }
+}
+
